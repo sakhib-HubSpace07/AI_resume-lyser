@@ -1,0 +1,12 @@
+ML Engineer
+[projects]
+House price predictor (Beginner): Clean a public housing dataset, engineer features, compare three models and explain the results in a notebook. About 1 week.
+Text classifier web app (Intermediate): Train an NLP model that classifies text, track your experiments and wrap it in a small web app. About 2 weeks.
+Document Q and A with RAG (Advanced): Build a chatbot that answers questions from your own PDFs using embeddings, a vector store and an LLM. About 3 weeks.
+End-to-end ML pipeline (Advanced): Train, track, containerize with Docker and deploy a model, with tests and a clear README on GitHub. About 3 weeks.
+[career]
+Polish your GitHub: Pin your 3 to 4 best projects and write a clear README for each with screenshots, setup steps and results. Never commit API keys or passwords. About 1 week.
+Upgrade your LinkedIn profile: Use a headline that names your target role, add your projects and skills, and ask teachers or mentors for recommendations. About 2 days.
+Tailor your resume: Use the exact skills from real ML Engineer job postings, keep it to one page and show measurable results. About 2 days.
+Apply for internships: Check company career pages and job boards every week, send 5 to 10 tailored applications and track them in a simple sheet. About 4 weeks.
+Prepare for interviews: Practice Python and SQL problems, revise ML basics such as bias, variance and evaluation metrics, and learn to explain each project in two minutes. About 4 weeks.

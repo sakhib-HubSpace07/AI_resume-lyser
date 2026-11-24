@@ -1,0 +1,12 @@
+Data Analyst
+[projects]
+Sales dashboard (Beginner): Clean a public sales dataset in Excel or Python and build an interactive dashboard in Power BI or Tableau. About 1 week.
+Customer churn analysis (Intermediate): Use SQL and Python to find why customers leave, test your ideas with statistics and present 3 clear recommendations. About 2 weeks.
+A/B test case study (Intermediate): Analyze a public experiment dataset, run hypothesis tests and write a one-page business summary. About 2 weeks.
+End-to-end data pipeline (Advanced): Collect data from a public API, clean it with Python, store it in a database and refresh a dashboard automatically. About 3 weeks.
+[career]
+Polish your GitHub: Pin your 3 to 4 best projects and write a clear README for each with screenshots, setup steps and results. Never commit API keys or passwords. About 1 week.
+Upgrade your LinkedIn profile: Use a headline that names your target role, add your projects and skills, and ask teachers or mentors for recommendations. About 2 days.
+Tailor your resume: Use the exact skills from real Data Analyst job postings, keep it to one page and show measurable results. About 2 days.
+Apply for internships: Check company career pages and job boards every week, send 5 to 10 tailored applications and track them in a simple sheet. About 4 weeks.
+Prepare for interviews: Practice SQL queries and case-study questions, revise statistics, and learn to explain each dashboard and its business insight in two minutes. About 4 weeks.

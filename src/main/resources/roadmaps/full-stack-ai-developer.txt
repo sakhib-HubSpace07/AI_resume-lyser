@@ -1,0 +1,12 @@
+Full-Stack AI Developer
+[projects]
+Personal portfolio site (Beginner): Build a responsive portfolio with HTML, CSS and JavaScript and deploy it to Netlify or Vercel. About 1 week.
+Full-stack notes app (Intermediate): Build a React frontend with a backend API, login and a database, with tests. About 3 weeks.
+AI chat app with streaming (Advanced): Build a chat app that streams LLM answers into the page and answers from your own documents with RAG. About 3 weeks.
+Production-ready AI SaaS (Advanced): Add authentication, usage limits, tests and CI to an AI app and deploy it with Docker. About 4 weeks.
+[career]
+Polish your GitHub: Pin your 3 to 4 best projects and write a clear README for each with screenshots, setup steps and results. Never commit API keys or passwords. About 1 week.
+Upgrade your LinkedIn profile: Use a headline that names your target role, add your projects and skills, and ask teachers or mentors for recommendations. About 2 days.
+Tailor your resume: Use the exact skills from real Full-Stack AI Developer job postings, keep it to one page and show measurable results. About 2 days.
+Apply for internships: Check company career pages and job boards every week, send 5 to 10 tailored applications and track them in a simple sheet. About 4 weeks.
+Prepare for interviews: Practice JavaScript and data structures questions, revise HTTP, REST, databases and authentication, and be ready to explain the architecture of your AI app. About 4 weeks.

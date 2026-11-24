@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Resume Analyzer</title>
+  <!-- Choose dark or light theme before the page is drawn, so it does not flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { }
+    })();
+  </script>
+  <link rel="stylesheet" th:href="@{/style.css}">
+  <script th:src="@{/app.js}" defer></script>
+</head>
+<body>
+
+<!-- ================= Header ================= -->
+<header class="hero no-print">
+  <div class="wrap hero-in">
+    <div>
+      <h1>AI Resume Analyzer</h1>
+      <p>Get a role-based match score, your missing skills and a personalized learning roadmap.</p>
+      <span class="pill">&#128274; Processed in memory &middot; nothing is saved</span>
+    </div>
+    <button type="button" id="theme" class="icon-btn" aria-label="Switch between dark and light mode">&#127763;</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ================= Upload form ================= -->
+  <section class="card no-print">
+    <form id="form" method="post" th:action="@{/analyze}" enctype="multipart/form-data">
+
+      <h2 class="step-h"><span class="num">1</span> Choose your target role</h2>
+      <div class="roles" role="radiogroup" aria-label="Target role">
+        <label class="role" th:each="r, st : ${roles}">
+          <input type="radio" name="role" th:value="${r.name()}"
+                 th:checked="${selectedRole == null ? st.first : r.name() == selectedRole}" required>
+          <span th:text="${r.name()}">ML Engineer</span>
+        </label>
+      </div>
+
+      <h2 class="step-h"><span class="num">2</span> Upload your resume</h2>
+      <label class="drop" id="drop" for="file">
+        <input id="file" type="file" name="resume" accept="application/pdf" required>
+        <div class="drop-ico">&#128196;</div>
+        <div class="drop-title">Drop your PDF here, or click to browse</div>
+        <div class="drop-sub" id="file-name">PDF only &middot; max 5 MB &middot; processed in memory</div>
+      </label>
+
+      <p class="error" id="client-error" hidden></p>
+      <p class="error" th:if="${error}" th:text="${error}"></p>
+
+      <button class="btn" id="go" type="submit">Analyze my resume</button>
+    </form>
+  </section>
+
+  <!-- ================= Results ================= -->
+  <section id="results" th:if="${score != null}">
+
+    <div class="result-head">
+      <h2 style="margin:0">Your results</h2>
+      <span class="muted">Analysis of <b th:text="${fileName}">resume.pdf</b> for
+        <b th:text="${selectedRole}">ML Engineer</b></span>
+    </div>
+
+    <nav class="tabs no-print" role="tablist" aria-label="Result sections">
+      <button class="tab active" type="button" role="tab" aria-selected="true" data-target="p-overview">&#128202; Overview</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-target="p-roadmap">&#128506;&#65039; Roadmap</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-target="p-resume">&#128196; Resume breakdown</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-target="p-match">&#128203; Skill match</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-target="p-skills">&#129504; Detected skills</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-target="p-coach">&#10024; AI coach</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-target="p-raw">&#128269; Raw text</button>
+    </nav>
+
+    <!-- ---------- Tab 1: Overview ---------- -->
+    <div class="panel" id="p-overview">
+      <div class="card score-card">
+        <div class="ring" th:classappend="${level}" th:style="'--p:' + ${score}">
+          <div class="ring-in"><span><span th:text="${score}">0</span><small>%</small></span></div>
+        </div>
+        <div class="score-info">
+          <h2 th:text="${verdict}">Strong match</h2>
+          <p class="muted" style="margin:0">
+            Your resume shows <b th:text="${matched.size()}">0</b> of
+            <b th:text="${matched.size() + missing.size()}">0</b> core skills for
+            <b th:text="${selectedRole}">this role</b>.
+          </p>
+          <div class="stats">
+            <div class="stat"><b th:text="${matched.size()}">0</b><span>skills matched</span></div>
+            <div class="stat"><b th:text="${missing.size()}">0</b><span>skills missing</span></div>
+            <div class="stat"><b th:text="${skills.size()}">0</b><span>found by AI</span></div>
+            <div class="stat"><b th:text="${resume.checksPassed()} + '/' + ${#lists.size(resume.checks())}">0/0</b><span>health checks</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-heading">
+          <div>
+            <h3 style="margin:0">Score breakdown</h3>
+            <p class="muted" style="margin:4px 0 0">How your readiness score is calculated</p>
+          </div>
+        </div>
+        <div class="dimension-list">
+          <div class="dimension" th:each="d : ${analysis.dimensions()}">
+            <div class="dimension-top">
+              <b th:text="${d.label()}">Skills match</b>
+              <span class="muted"><b th:text="${d.percent()}">0</b>% · <span th:text="${d.weight()}">55</span>% weight</span>
+            </div>
+            <div class="dimension-track"><span th:style="'width:' + ${d.percent()} + '%'"></span></div>
+            <p class="muted" th:text="${d.note()}">Details</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0">&#9989; Skills you have <span class="count" th:text="${matched.size()}">0</span></h3>
+        <div class="chips">
+          <span class="chip good" th:each="s : ${matched}" th:text="${s.name()}">python</span>
+        </div>
+        <h3>&#9888;&#65039; Missing skills <span class="count" th:text="${missing.size()}">0</span></h3>
+        <div class="chips">
+          <span class="chip bad" th:each="s : ${missing}" th:text="${s.name()}">docker</span>
+          <span class="muted" th:if="${#lists.isEmpty(missing)}">None. Great job!</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0">Resume health check
+          <span class="count" th:text="${resume.checksPassed()} + '/' + ${#lists.size(resume.checks())}">0/0</span></h3>
+        <ul class="checks">
+          <li th:each="c : ${resume.checks()}" th:classappend="${c.ok()} ? 'pass' : 'fail'">
+            <span class="ck"></span>
+            <div>
+              <b th:text="${c.label()}">Email address</b>
+              <div class="muted" th:text="${c.note()}">Found</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ---------- Tab 2: Roadmap ---------- -->
+    <div class="panel" id="p-roadmap" hidden>
+      <div class="card">
+        <div class="rm-head">
+          <div>
+            <h2>Your personalized roadmap</h2>
+            <p class="summary" th:text="${roadmap.summary()}">Summary</p>
+          </div>
+          <button class="btn ghost no-print" type="button" onclick="window.print()">&#128424; Print / Save as PDF</button>
+        </div>
+
+        <div class="progress no-print">
+          <div class="progress-bar"><div id="pbar"></div></div>
+          <span id="ptext">0 of 0 steps done</span>
+        </div>
+
+        <div class="timeline">
+          <div class="phase" th:each="phase, st : ${roadmap.phases()}" th:attr="data-phase=${st.count}">
+            <div class="marker" th:text="${st.count}">1</div>
+            <div class="phase-body">
+              <h3 th:text="${phase.name()}">Phase</h3>
+              <p class="goal" th:text="${phase.goal()}">Goal</p>
+              <div class="step" th:each="step : ${phase.steps()}">
+                <input type="checkbox" class="step-check no-print" aria-label="Mark this step as done">
+                <div class="step-main">
+                  <div class="step-title">
+                    <span th:text="${step.title()}">Step</span>
+                    <span class="badge" th:if="${step.time() != ''}" th:text="${step.time()}">1 week</span>
+                  </div>
+                  <p th:text="${step.detail()}">Details</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Tab 3: Resume breakdown ---------- -->
+    <div class="panel" id="p-resume" hidden>
+      <div class="card profile">
+        <div class="avatar" th:text="${resume.initials()}">CV</div>
+        <div>
+          <h2 th:text="${resume.name() != '' ? resume.name() : 'Your resume'}">Name</h2>
+          <div class="muted" th:if="${resume.headline() != ''}" th:text="${resume.headline()}">Headline</div>
+          <div class="contacts">
+            <a class="contact" th:each="c : ${resume.contacts()}"
+               th:classappend="'c-' + ${c.type()}"
+               th:href="${c.href() != '' ? c.href() : null}"
+               th:text="${c.text()}" target="_blank" rel="noopener noreferrer">contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card sec" th:each="s : ${resume.sections()}">
+        <h3 class="sec-title">
+          <span class="ico" th:classappend="'k-' + ${s.kind()}"></span>
+          <span th:text="${s.title()}">Section</span>
+        </h3>
+
+        <p th:each="p : ${s.paragraphs()}" th:text="${p}">Paragraph</p>
+
+        <ul th:if="${!#lists.isEmpty(s.bullets())}">
+          <li th:each="b : ${s.bullets()}" th:text="${b}">Bullet</li>
+        </ul>
+
+        <div class="sg" th:each="g : ${s.skillGroups()}">
+          <div class="sg-label" th:text="${g.label()}">Group</div>
+          <div class="chips">
+            <span class="chip" th:each="k : ${g.skills()}" th:text="${k}">Skill</span>
+          </div>
+        </div>
+
+        <div class="block" th:each="b : ${s.blocks()}">
+          <div class="block-head">
+            <div>
+              <b th:text="${b.title()}">Title</b>
+              <span class="org" th:if="${b.org() != ''}" th:text="${b.org()}">Organisation</span>
+            </div>
+            <span class="badge" th:if="${b.date() != ''}" th:text="${b.date()}">2025</span>
+          </div>
+          <ul th:if="${!#lists.isEmpty(b.bullets())}">
+            <li th:each="x : ${b.bullets()}" th:text="${x}">Bullet</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Skill match details ---------- -->
+    <div class="panel" id="p-match" hidden>
+      <div class="card">
+        <h2>Role skill match</h2>
+        <p class="muted">Each requirement is classified by the evidence found in your resume. AI-inferred skills are not treated as proven experience.</p>
+        <div class="match-list">
+          <div class="match-row" th:each="s : ${analysis.skills()}">
+            <div class="match-main">
+              <b th:text="${s.name()}">Java</b>
+              <span class="muted" th:text="${s.category()}">Backend</span>
+              <span class="evidence" th:if="${s.evidence() != ''}" th:text="${s.evidence()}">Evidence</span>
+              <span class="evidence" th:if="${s.related() != ''}" th:text="'Related skill: ' + ${s.related()} + ' (' + ${s.relatedPct()} + '%)'">Related skill</span>
+            </div>
+            <div class="match-tags">
+              <span class="status" th:classappend="' status-' + ${s.status()}" th:text="${s.status()}">proven</span>
+              <span class="badge" th:text="${s.core() ? 'Core' : 'Bonus'}">Core</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Tab 4: AI skills ---------- -->
+    <div class="panel" id="p-skills" hidden>
+      <div class="card">
+        <div class="rm-head">
+          <div>
+            <h2>Skills identified <span class="count" th:text="${skills.size()}">0</span></h2>
+            <p class="muted" style="margin:0">Combines skills listed in your resume with technologies identified by the local AI model. Review for accuracy.</p>
+          </div>
+          <button class="btn ghost" type="button" id="copy-skills">Copy list</button>
+        </div>
+        <input class="search" id="skill-search" type="search" placeholder="Filter skills..." aria-label="Filter skills">
+        <div class="chips" id="skill-chips">
+          <span class="chip" th:each="skill : ${skills}" th:text="${skill}">Python</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- AI coach ---------- -->
+    <div class="panel" id="p-coach" hidden>
+      <div class="card">
+        <h2>Improve your experience bullets</h2>
+        <p class="muted">The coach can strengthen wording, but it must not invent tools, achievements or metrics. Review every suggestion before using it.</p>
+        <form id="coach-form" th:action="@{/coach}" method="post">
+          <input type="hidden" name="role" th:value="${selectedRole}">
+          <label for="coach-bullets"><b>Your bullet points</b></label>
+          <textarea id="coach-bullets" name="bullets" rows="6" maxlength="5000"
+                    th:text="${weakBulletsText}" placeholder="Paste up to three experience or project bullet points, one per line."></textarea>
+          <button class="btn" id="coach-submit" type="submit">Improve bullet points</button>
+        </form>
+        <div id="coach-result" class="coach-result" aria-live="polite">
+          <p class="muted" th:if="${#lists.isEmpty(weakBullets)}">No obvious unquantified bullets were detected. You can still paste bullets above for feedback.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Tab 6: Raw text ---------- -->
+    <div class="panel" id="p-raw" hidden>
+      <div class="card">
+        <div class="rm-head">
+          <div>
+            <h2>Extracted text</h2>
+            <p class="muted" style="margin:0">Exactly what the app read from your PDF
+              (<b th:text="${resume.wordCount()}">0</b> words). If this looks broken, the PDF may be a scan or use unusual fonts.</p>
+          </div>
+          <button class="btn ghost" type="button" id="copy-raw">Copy text</button>
+        </div>
+        <pre class="raw" id="raw-text" th:text="${text}"></pre>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<!-- Returned by the asynchronous AI coach request -->
+<div th:fragment="coach">
+  <div class="error" th:if="${coachError}" th:text="${coachError}"></div>
+  <div class="suggestion" th:each="s : ${suggestions}">
+    <div><span class="muted">Original</span><p th:text="${s.original()}"></p></div>
+    <div><span class="muted">Suggested</span><p th:text="${s.improved()}"></p></div>
+  </div>
+</div>
+
+<!-- ================= Loading screen ================= -->
+<div class="loading" id="loading" hidden role="status" aria-live="polite">
+  <div class="loading-card">
+    <div class="spinner"></div>
+    <h3>Analyzing your resume...</h3>
+    <p class="muted" id="loading-tip" style="margin:0 0 8px">Reading the text from your PDF in memory...</p>
+    <small class="muted">The AI runs on your own laptop, so this can take 1 to 2 minutes. Please keep this tab open.</small>
+  </div>
+</div>
+
+</body>
+</html>

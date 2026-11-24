@@ -1,0 +1,30 @@
+Cloud DevOps Engineer
+@icon ☁️
+@tagline Automate infrastructure, pipelines and reliable deployments
+@order 9
+[Foundations]
+Linux|ubuntu|unix
+Bash Scripting|bash|shell script|shell scripting
+Git|github|gitlab
+Python|python3
+Networking|tcp/ip|dns|subnet|firewall|osi model
+[Containers]
+Docker|dockerfile|docker compose
+Kubernetes|k8s
++Helm
+[Cloud]
+Cloud Platforms|aws|azure|gcp|google cloud|cloud
+AWS Core Services|ec2|s3|vpc|rds|lambda|cloudfront
++Serverless|lambda|cloud functions|azure functions
+[IaC & CI/CD]
+Terraform|infrastructure as code|iac
+CI/CD|cicd|github actions|jenkins|gitlab ci|circleci|continuous integration
+Ansible|configuration management|puppet|chef
++GitOps|argocd|argo cd|flux
++DevSecOps|trivy|snyk|sonarqube|dependency scanning
+[Observability & Reliability]
+Monitoring|prometheus|grafana|alerting|datadog|cloudwatch
+Logging|elk|loki|logstash|kibana|fluentd
++SRE Practices|sre|slo|sli|error budget|incident|on-call
++Cost Optimization|finops|cost optimisation|cost explorer|budget alerts
++Secrets Management|vault|secrets manager|key vault

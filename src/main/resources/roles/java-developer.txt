@@ -1,0 +1,35 @@
+Java Developer
+@icon ☕
+@tagline Build secure, scalable backend systems with Java and Spring
+@order 2
+[Core Java]
+Java
+OOP|object-oriented|object oriented|polymorphism|inheritance
+Data Structures|linked list|binary tree|hash map|hashmap
+Algorithms|algorithm|sorting|dynamic programming|big o
+Java Collections|collections|arraylist|hashmap|hashset|java.util
+Multithreading|concurrency|threads|executorservice|completablefuture
++Java Streams|streams api|stream api|lambda
+[Backend Frameworks]
+Spring Boot|spring
+REST APIs|rest api|restful|fastapi|flask|django rest|spring web|express.js|expressjs
+Hibernate/JPA|hibernate|jpa|spring data
+Microservices|microservice|service discovery|api gateway
++Spring Security|jwt|oauth|oauth2
++Spring AI|langchain4j
+[Databases]
+SQL
+MySQL/PostgreSQL|mysql|postgresql|postgres
++MongoDB|nosql|mongoose
++Redis|caching|cache
+[Build & Quality]
+Maven/Gradle|maven|gradle
+JUnit/Testing|junit|mockito|unit test|unit tests|testing|pytest
+Git|github|gitlab
++CI/CD|cicd|github actions|jenkins|gitlab ci|circleci|continuous integration
+[DevOps & Cloud]
+Docker|dockerfile|docker compose
+Linux|ubuntu|unix
++Kubernetes|k8s
++Cloud Platforms|aws|azure|gcp|google cloud|cloud
++Kafka|rabbitmq|message queue|messaging

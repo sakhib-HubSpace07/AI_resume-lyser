@@ -1,0 +1,12 @@
+Cloud DevOps Engineer
+[projects]
+Static site pipeline (Beginner): Deploy a website on cloud storage with a GitHub Actions pipeline that publishes every push. About 1 week.
+Three-tier app on the cloud (Intermediate): Deploy a web app, API and database with Docker and Terraform on a free tier account. About 2 weeks.
+Kubernetes deployment with monitoring (Advanced): Run an app on Kubernetes with Helm and add Prometheus and Grafana dashboards. About 3 weeks.
+GitOps platform (Advanced): Set up Argo CD so that every change in a Git repository deploys automatically with rollbacks. About 3 weeks.
+[career]
+Polish your GitHub: Pin your 3 to 4 best projects and write a clear README for each with screenshots, setup steps and results. Never commit API keys or passwords. About 1 week.
+Upgrade your LinkedIn profile: Use a headline that names your target role, add your projects and skills, and ask teachers or mentors for recommendations. About 2 days.
+Tailor your resume: Use the exact skills from real Cloud DevOps Engineer job postings, keep it to one page and show measurable results. About 2 days.
+Apply for internships: Check company career pages and job boards every week, send 5 to 10 tailored applications and track them in a simple sheet. About 4 weeks.
+Prepare for interviews: Practice Linux, networking and scripting questions, revise Docker, Kubernetes, Terraform and CI/CD, and be ready to explain how you would fix a failing deployment. About 4 weeks.

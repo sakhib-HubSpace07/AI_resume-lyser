@@ -1,0 +1,12 @@
+AI Security Engineer
+[projects]
+Home lab and vulnerability scan (Beginner): Build a safe virtual lab with Kali Linux and a deliberately vulnerable app, and write a short report on what you found. About 2 weeks.
+Log analysis dashboard (Intermediate): Collect sample logs in Splunk or the Elastic stack and build searches and alerts for suspicious logins. About 2 weeks.
+Anomaly detector for network traffic (Advanced): Train a model on a public intrusion dataset and compare it with simple rule-based detection. About 3 weeks.
+LLM red team report (Advanced): Test your own LLM app for prompt injection and data leaks using the OWASP LLM Top 10 and document the fixes. About 3 weeks.
+[career]
+Polish your GitHub: Pin your 3 to 4 best projects and write a clear README for each with screenshots, setup steps and results. Never commit API keys or passwords. About 1 week.
+Upgrade your LinkedIn profile: Use a headline that names your target role, add your projects and skills, and ask teachers or mentors for recommendations. About 2 days.
+Tailor your resume: Use the exact skills from real AI Security Engineer job postings, keep it to one page and show measurable results. About 2 days.
+Apply for internships: Check company career pages and job boards every week, send 5 to 10 tailored applications and track them in a simple sheet. About 4 weeks.
+Prepare for interviews: Practice networking, Linux and web security questions, revise the OWASP Top 10 and common attack types, and learn to explain how you would respond to an incident. About 4 weeks.

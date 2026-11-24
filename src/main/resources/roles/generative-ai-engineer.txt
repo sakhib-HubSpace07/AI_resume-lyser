@@ -1,0 +1,30 @@
+Generative AI Engineer
+@icon ✨
+@tagline Build LLM apps with RAG, fine-tuning and guardrails
+@order 4
+[Foundations]
+Python|python3
+Git|github|gitlab
+REST APIs|rest api|restful|fastapi|flask|django rest|spring web|express.js|expressjs
+NLP|natural language processing|text classification|spacy|nltk
+Deep Learning|dl
+[LLM Engineering]
+LLMs|llm|large language model|gpt|llama|mistral|gemini
+Prompt Engineering|prompting|prompt design|few-shot|chain of thought
+Transformers|transformer|hugging face|huggingface|bert|distilbert
+LLM APIs|openai api|anthropic|claude api|gemini api|groq|llm api|chat completion
+Fine-tuning|fine tuning|lora|qlora|peft
++LLM Evaluation|ragas|benchmark|evals|evaluation
+[RAG & Data]
+RAG|retrieval augmented generation|retrieval-augmented generation
+Embeddings|embedding|sentence-transformers|sentence transformers|semantic search
+Vector Databases|vector database|vector db|faiss|chroma|qdrant|pinecone|pgvector|weaviate|milvus
+LangChain/LlamaIndex|langchain|llamaindex|llama index
+[Deployment]
+Docker|dockerfile|docker compose
++Local LLMs|ollama|vllm|llama.cpp|gguf|quantization|local llm
++Cloud Platforms|aws|azure|gcp|google cloud|cloud
++Streaming and WebSockets|websocket|websockets|server-sent events|sse|streaming|socket.io
+[Responsible AI & Multimodal]
+AI Safety and Guardrails|guardrails|guardrail|responsible ai|prompt injection|ai safety|hallucination
++Multimodal AI|multimodal|vision-language|stable diffusion|diffusers|diffusion model

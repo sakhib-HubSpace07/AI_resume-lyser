@@ -1,0 +1,12 @@
+Computer Vision Engineer
+[projects]
+Document scanner (Beginner): Use OpenCV to detect a page in a photo, straighten it and clean the image. About 1 week.
+Custom object detector (Intermediate): Label your own dataset and train a YOLO model, then report precision and recall. About 2 weeks.
+Real-time tracking app (Advanced): Detect and track objects in a video stream and show counts on a small dashboard. About 3 weeks.
+Edge deployment (Advanced): Optimize a vision model with ONNX or quantization and run it on a small device such as a Raspberry Pi. About 3 weeks.
+[career]
+Polish your GitHub: Pin your 3 to 4 best projects and write a clear README for each with screenshots, setup steps and results. Never commit API keys or passwords. About 1 week.
+Upgrade your LinkedIn profile: Use a headline that names your target role, add your projects and skills, and ask teachers or mentors for recommendations. About 2 days.
+Tailor your resume: Use the exact skills from real Computer Vision Engineer job postings, keep it to one page and show measurable results. About 2 days.
+Apply for internships: Check company career pages and job boards every week, send 5 to 10 tailored applications and track them in a simple sheet. About 4 weeks.
+Prepare for interviews: Practice Python and image processing questions, revise CNNs and detection metrics such as mAP and IoU, and be ready to explain your training and deployment choices. About 4 weeks.

@@ -1,0 +1,29 @@
+AI Security Engineer
+@icon 🛡️
+@tagline Protect systems and AI models from modern attacks
+@order 8
+[Security Foundations]
+Networking|tcp/ip|dns|subnet|firewall|osi model
+Linux|ubuntu|unix
+Python|python3
+Cryptography Basics|cryptography|encryption|hashing|tls|ssl|pki
+OWASP Top 10|owasp|xss|sql injection|csrf
+Secure Coding|input validation|sast|code review|owasp cheat sheet
++Bash Scripting|bash|shell script|shell scripting
+[Offensive & Defensive Security]
+Penetration Testing|pentest|pentesting|burp suite|metasploit|kali|ethical hacking
+Vulnerability Assessment|vulnerability scanning|nessus|nmap|openvas|cve
+Incident Response|digital forensics|forensics|soc|blue team
+SIEM and Log Analysis|siem|splunk|elk|elastic stack|log analysis|wazuh
++Threat Modeling|threat model|stride|mitre|attack surface
+[AI Security]
+Adversarial ML|adversarial|evasion attack|model poisoning|data poisoning
+LLM Security|prompt injection|jailbreak|owasp llm
+ML for Security|anomaly detection|intrusion detection|malware detection|phishing detection
++Privacy-Preserving ML|differential privacy|federated learning|opacus|privacy-preserving
++AI Governance|nist ai|ai risk|eu ai act|model risk
+[Cloud & DevSecOps]
+Docker|dockerfile|docker compose
+Cloud Security|iam|aws security|least privilege|security groups
++DevSecOps|trivy|snyk|sonarqube|dependency scanning
++Git|github|gitlab

@@ -1,0 +1,141 @@
+Adversarial ML | adversarial | evasion attack | model poisoning | data poisoning: Explore the IBM Adversarial Robustness Toolbox tutorials and attack and defend a small image classifier. About 3 weeks.
+Agent Frameworks | langgraph | crewai | autogen | langchain | llamaindex | openai agents: Follow the official LangGraph tutorials, then try CrewAI or AutoGen and compare them on the same task. About 3 weeks.
+AI Agents | ai agent | agentic | agents | autonomous agent: Take the free Hugging Face Agents course and the DeepLearning.AI short course on AI Agents in LangGraph. About 3 weeks.
+AI Governance | nist ai | ai risk | eu ai act | model risk: Read the NIST AI Risk Management Framework and a summary of the EU AI Act and apply them to one project. About 2 weeks.
+AI Safety and Guardrails | guardrails | guardrail | responsible ai | prompt injection | ai safety | hallucination: Read the OWASP Top 10 for LLM Applications and the NVIDIA NeMo Guardrails docs and add input checks to one app. About 2 weeks.
+Algorithms | algorithm | sorting | dynamic programming | big o: Practice sorting, searching and recursion on LeetCode and NeetCode, solving a few problems every day. About 6 weeks.
+Ansible | configuration management | puppet | chef: Follow the Ansible getting started guide and automate the setup of a server. About 2 weeks.
+Async Programming | asyncio | async | concurrent: Read the official Python asyncio documentation and rewrite a script to call three APIs at the same time. About 1 week.
+Authentication | authorization | jwt | oauth | oauth2 | passport.js | nextauth: Read the OWASP Authentication Cheat Sheet and add JWT or OAuth login to a small app. About 2 weeks.
+AWS Core Services | ec2 | s3 | vpc | rds | lambda | cloudfront: Use the free AWS Skill Builder training and launch an EC2 server, an S3 bucket and a Lambda function. About 3 weeks.
+Backend Framework | spring boot | fastapi | django | flask | express.js | node.js | asp.net | laravel | nestjs: Pick one backend framework such as FastAPI, Django or Spring Boot and complete its official tutorial. About 4 weeks.
+Bash Scripting | bash | shell script | shell scripting: Read the free book The Linux Command Line at linuxcommand.org and automate three small tasks with shell scripts. About 2 weeks.
+Business Acumen | kpi | kpis | business analysis | stakeholder | stakeholders | business metrics: Pick a public dataset, define three business KPIs and present what changed and why to an imaginary stakeholder. About 2 weeks.
+CI/CD | cicd | github actions | jenkins | gitlab ci | circleci | continuous integration: Follow the GitHub Actions quickstart and automatically build and test one project on every push. About 1 week.
+Cloud Deployment | vercel | netlify | render | heroku | aws | azure | gcp | deployed: Deploy one app to Vercel, Netlify or Render following their quickstarts and add a custom domain. About 1 week.
+Cloud ML Platforms | sagemaker | vertex ai | azure ml | azure machine learning | databricks: Run one training job on AWS SageMaker, Vertex AI or Azure ML using the free tier or free credits. About 3 weeks.
+Cloud Platforms | aws | azure | gcp | google cloud | cloud: Start with the free AWS Cloud Practitioner Essentials training, Microsoft Learn Azure Fundamentals or Google Cloud Skills Boost and deploy one small project. About 3 weeks.
+Cloud Security | iam | aws security | least privilege | security groups: Take the free AWS Security Fundamentals course and review the IAM permissions of one of your own projects. About 3 weeks.
+CNNs | cnn | convolutional | resnet | vgg | efficientnet: Read the Stanford CS231n notes on convolutional networks and train a ResNet on a small image dataset. About 3 weeks.
+Computer Vision | opencv | image classification | object detection: Follow the official OpenCV Python tutorials, then watch the Stanford CS231n lectures and build a small image project. About 3 weeks.
+Cost Optimization | finops | cost optimisation | cost explorer | budget alerts: Read the FinOps Foundation basics and set budget alerts and review costs in your cloud account. About 1 week.
+Cryptography Basics | cryptography | encryption | hashing | tls | ssl | pki: Follow Khan Academy's Journey into Cryptography and encrypt and hash data with Python. About 2 weeks.
+Dashboards | dashboard: Rebuild one public dashboard in Power BI, Tableau or Looker Studio and add filters and clear titles. About 1 week.
+Data Annotation | annotation | labeling | cvat | label studio | roboflow | labelimg: Label a small dataset with CVAT or Label Studio and export it in YOLO format. About 1 week.
+Data Augmentation | augmentation | albumentations: Read the Albumentations documentation and compare model accuracy with and without augmentation. About 1 week.
+Data Cleaning | data wrangling | data preprocessing | preprocessing | missing values | data cleansing: Do the Kaggle Learn Data Cleaning course and clean one messy real dataset from start to finish. About 1 week.
+Data Drift Detection | data drift | drift detection | evidently | model monitoring: Follow the open source Evidently AI tutorials and detect drift between two versions of a dataset. About 1 week.
+Data Storytelling | storytelling | insights | recommendations: Take one analysis and write a one page summary with three insights and three recommendations for a manager. About 1 week.
+Data Structures | linked list | binary tree | hash map | hashmap: Study with the freeCodeCamp data structures course and implement lists, stacks, queues, trees and hash maps yourself. About 5 weeks.
+Data Versioning | dvc | data version control | lakefs: Follow the DVC Get Started guide and version a dataset next to your code. About 1 week.
+Data Visualization | data visualisation | matplotlib | seaborn | plotly: Practice with the official Matplotlib and Seaborn tutorials and the Kaggle Learn Data Visualization course. About 1 week.
+Data Warehousing | bigquery | snowflake | redshift | data warehouse: Use the free BigQuery sandbox, follow its quickstart and query a public dataset. About 2 weeks.
+Deep Learning | dl: Try the free fast.ai Practical Deep Learning course or the DeepLearning.AI Deep Learning Specialization in audit mode. About 4 weeks.
+DevSecOps | trivy | snyk | sonarqube | dependency scanning: Read the OWASP DevSecOps Guideline and add a Trivy scan to one CI pipeline. About 2 weeks.
+Docker | dockerfile | docker compose: Follow the official Docker Get Started guide and containerize one of your own projects. About 1 week.
+Edge Deployment | jetson | raspberry pi | edge ai | tensorflow lite: Take the free NVIDIA Jetson AI Fundamentals course or the TensorFlow Lite guide and run a model on a small device. About 3 weeks.
+Embeddings | embedding | sentence-transformers | sentence transformers | semantic search: Read the Sentence-Transformers documentation and build a small semantic search over 100 documents. About 1 week.
+ETL | data pipeline | airflow | elt: Follow the Apache Airflow tutorial and build a small pipeline that loads a CSV file into a database. About 3 weeks.
+Excel | spreadsheet | pivot table: Use Microsoft's free Excel training and practice pivot tables and lookup formulas on a real dataset. About 2 weeks.
+Experiment Tracking | mlflow | weights & biases | wandb | tensorboard: Follow the official MLflow quickstart and track the runs of one training script, or try Weights and Biases. About 1 week.
+Exploratory Data Analysis | eda: Read the free Python Data Science Handbook by Jake VanderPlas and run an EDA on a public Kaggle dataset. About 2 weeks.
+Feature Engineering | feature selection | feature extraction: Take the free Feature Engineering course on Kaggle Learn, then practice by improving a model on a Kaggle dataset. About 1 week.
+Feature Stores | feature store | feast: Follow the Feast quickstart and serve features for one model. About 2 weeks.
+Fine-tuning | fine tuning | lora | qlora | peft: Follow the Hugging Face PEFT and LoRA guides and fine-tune a small open model on a tiny dataset using free Colab. About 3 weeks.
+Frontend Framework | react | next.js | nextjs | react.js | vue | angular | svelte: Follow the official react.dev Learn course and build a small app with state and API calls. About 4 weeks.
+Generative Vision | diffusion | gan | gans | stable diffusion | generative: Take the free Hugging Face Diffusion Models course and generate images with a pretrained model. About 3 weeks.
+Git | github | gitlab: Read the free Pro Git book at git-scm.com and publish a small repository to GitHub. About 1 week.
+GitOps | argocd | argo cd | flux: Read the OpenGitOps principles and deploy one app with Argo CD following its official getting started guide. About 2 weeks.
+GraphQL | apollo: Follow the Learn section on graphql.org and build a small GraphQL API. About 2 weeks.
+Helm: Follow the Helm quickstart guide and package one of your apps as a chart. About 1 week.
+Hibernate/JPA | hibernate | jpa | spring data: Follow the official Accessing Data with JPA guide on spring.io and connect a small app to a database. About 2 weeks.
+HTML and CSS | html | css | html5 | css3 | flexbox: Follow MDN Learn web development and the freeCodeCamp Responsive Web Design course and build three small pages. About 3 weeks.
+Hyperparameter Tuning | hyperparameter | grid search | random search | optuna: Try scikit-learn grid and random search, then tune one model with Optuna following its official tutorial. About 1 week.
+Hypothesis Testing | hypothesis test | a/b test | a/b testing | p-value | t-test | significance: Learn significance tests on Khan Academy and run t-tests and an A/B test analysis with SciPy on a public dataset. About 3 weeks.
+Image Classification | transfer learning: Follow the official PyTorch transfer learning tutorial and classify your own set of images. About 2 weeks.
+Image Processing | opencv | scikit-image | pillow: Follow the OpenCV Python tutorials on filtering, thresholding and contours and build a small document scanner. About 2 weeks.
+Image Segmentation | segmentation | u-net | mask r-cnn | segment anything: Read the torchvision segmentation docs and try U-Net and the Segment Anything model on sample images. About 3 weeks.
+Incident Response | digital forensics | forensics | soc | blue team: Read the NIST incident response guide and complete a free SOC analyst learning path on TryHackMe. About 4 weeks.
+Java: Practice core Java with the University of Helsinki Java Programming MOOC and the official Oracle Java Tutorials. About 6 weeks.
+Java Collections | collections | arraylist | hashmap | hashset | java.util: Work through the Oracle Java Tutorials Collections trail and practice with List, Set and Map examples. About 1 week.
+Java Streams | streams api | stream api | lambda: Read the Oracle Java Tutorials lesson on Aggregate Operations and rewrite loops using streams and lambdas. About 1 week.
+JavaScript | js | es6: Work through javascript.info and build a small interactive app without a framework. About 4 weeks.
+JUnit/Testing | junit | mockito | unit test | unit tests | testing | pytest: Read the JUnit 5 user guide and the Mockito documentation and write tests for one of your projects. About 2 weeks.
+Jupyter | colab: Follow the official Jupyter Notebook documentation tutorial and use notebooks for one full analysis. About 3 days.
+Kafka | rabbitmq | message queue | messaging: Follow the Apache Kafka quickstart or the free Confluent Developer courses and send messages between two services. About 3 weeks.
+Knowledge Graphs | knowledge graph | neo4j | graph database | cypher: Take the free Neo4j GraphAcademy courses and build a small knowledge graph from documents. About 3 weeks.
+Kubeflow | argo workflows: Read the Kubeflow documentation and run one pipeline on a local cluster. About 3 weeks.
+Kubernetes | k8s: Complete the official Kubernetes Basics tutorial and run one containerized app on a local cluster. About 3 weeks.
+LangChain/LlamaIndex | langchain | llamaindex | llama index: Follow the official LangChain and LlamaIndex tutorials and rebuild one RAG app with each. About 2 weeks.
+Linear Algebra | matrix | matrices | eigenvalue: Watch 3Blue1Brown's Essence of Linear Algebra and practice on Khan Academy. About 3 weeks.
+Linux | ubuntu | unix: Learn the command line with Linux Journey and practice on OverTheWire Bandit, using WSL on Windows. About 2 weeks.
+LLM APIs | openai api | anthropic | claude api | gemini api | groq | llm api | chat completion: Read the quickstart of one LLM provider API, many have free tiers, and build a small command line chatbot. About 1 week.
+LLM Evaluation | ragas | benchmark | evals | evaluation: Read the RAGAS documentation and build a small test set to measure the answer quality of one of your LLM apps. About 2 weeks.
+LLM Security | prompt injection | jailbreak | owasp llm: Read the OWASP Top 10 for LLM Applications and try the Gandalf prompt injection game by Lakera. About 2 weeks.
+LLMs | llm | large language model | gpt | llama | mistral | gemini: Watch Andrej Karpathy's Intro to Large Language Models and take free DeepLearning.AI short courses on building with LLMs. About 2 weeks.
+Local LLMs | ollama | vllm | llama.cpp | gguf | quantization | local llm: Install Ollama, run open models locally and read the vLLM and llama.cpp docs to understand quantization and serving. About 1 week.
+Logging | elk | loki | logstash | kibana | fluentd: Set up the Elastic stack or Grafana Loki following the official docs and search the logs of one app. About 2 weeks.
+Looker Studio | data studio: Follow the Looker Studio help center tutorials and build a report from a Google Sheet. About 1 week.
+Machine Learning | ml: Take the free Kaggle Learn Intro to Machine Learning course, then Andrew Ng's Machine Learning Specialization in audit mode. About 4 weeks.
+Maven/Gradle | maven | gradle: Read the official Maven in 5 Minutes guide and the Gradle getting started tutorial, then use one in a project. About 1 week.
+MCP | model context protocol: Read the Model Context Protocol docs at modelcontextprotocol.io and build a small MCP server that exposes one tool. About 2 weeks.
+Microservices | microservice | service discovery | api gateway: Read the pattern catalog on microservices.io and build two small Spring Boot services that talk to each other. About 3 weeks.
+ML for Security | anomaly detection | intrusion detection | malware detection | phishing detection: Train an anomaly detector on a public dataset such as NSL-KDD or CICIDS2017 with scikit-learn. About 3 weeks.
+Model Deployment | model serving | model inference | inference api | deployed | streamlit | gradio | bentoml: Serve a trained model with FastAPI inside Docker and build a small Streamlit or Gradio demo. About 2 weeks.
+Model Evaluation | cross-validation | cross validation | f1-score | f1 score | precision | recall | roc | auc: Read the scikit-learn guide on metrics and model evaluation and compare models with cross-validation on one dataset. About 1 week.
+Model Optimization | onnx | tensorrt | quantization | pruning | tflite: Export a model to ONNX and read the PyTorch quantization guide to make it smaller and faster. About 2 weeks.
+Model Serving | bentoml | triton | torchserve | seldon | kserve | inference server: Package a model with BentoML or serve it with FastAPI and load test it. About 2 weeks.
+MongoDB | nosql | mongoose: Take the free MongoDB University introductory courses and build a small app with it. About 2 weeks.
+Monitoring | prometheus | grafana | alerting | datadog | cloudwatch: Follow the Prometheus getting started guide and build one Grafana dashboard for a running app. About 2 weeks.
+Multi-Agent Systems | multi-agent | multi agent | multiagent: Follow the multi-agent tutorials in the LangGraph docs and build two agents that cooperate on one task. About 3 weeks.
+Multimodal AI | multimodal | vision-language | stable diffusion | diffusers | diffusion model: Take the free Hugging Face Diffusion Models course and build a small image and text demo. About 3 weeks.
+Multithreading | concurrency | threads | executorservice | completablefuture: Follow the Oracle Java Tutorials lesson on Concurrency and build a small producer and consumer example. About 2 weeks.
+MySQL/PostgreSQL | mysql | postgresql | postgres: Install MySQL or PostgreSQL locally, follow its official tutorial and connect it to a small project. About 2 weeks.
+Networking | tcp/ip | dns | subnet | firewall | osi model: Take the free Cisco Networking Academy Networking Basics course and watch Professor Messer's free Network+ videos. About 3 weeks.
+Neural Networks | neural network | cnn | rnn | lstm | mlp: Watch the 3Blue1Brown neural networks series, then follow Andrej Karpathy's Neural Networks Zero to Hero videos. About 3 weeks.
+NLP | natural language processing | text classification | spacy | nltk: Take the free Hugging Face course and build a small text classifier, then explore the Stanford CS224n lectures. About 3 weeks.
+Node.js | nodejs | express.js | expressjs | nestjs: Follow the official Node.js learning guides and build a small REST API with Express. About 3 weeks.
+NumPy: Read the official NumPy absolute basics for beginners guide, then redo small math exercises with arrays. About 1 week.
+Object Detection | yolo | detectron | faster r-cnn | ssd: Follow the Ultralytics YOLO documentation and train a detector on a small custom dataset. About 3 weeks.
+Object Tracking | deepsort | bytetrack | tracking: Follow the Ultralytics tracking documentation and track people in a short video. About 2 weeks.
+Observability and Tracing | tracing | langsmith | langfuse | observability | telemetry: Follow the Langfuse or LangSmith quickstart and trace every step of one agent run. About 1 week.
+OOP | object-oriented | object oriented | polymorphism | inheritance: Study classes, inheritance and polymorphism in the Oracle Java Tutorials, then model a small library system. About 2 weeks.
+OWASP Top 10 | owasp | xss | sql injection | csrf: Work through the OWASP Top 10 and the free PortSwigger Web Security Academy labs. About 4 weeks.
+Pandas: Do the free Kaggle Learn Pandas course and the official 10 minutes to pandas guide. About 1 week.
+Penetration Testing | pentest | pentesting | burp suite | metasploit | kali | ethical hacking: Start with the free TryHackMe learning paths and practice only in legal labs and on platforms that give you permission. About 6 weeks.
+Planning and Reasoning | react agent | reasoning | chain of thought | planning | reflection: Read the ReAct paper and implement a simple reason and act loop with an open model. About 2 weeks.
+Power BI/Tableau | power bi | tableau | looker: Use the free Microsoft Learn Power BI modules or the Tableau free training videos and build one dashboard. About 2 weeks.
+Privacy-Preserving ML | differential privacy | federated learning | opacus | privacy-preserving: Try the Opacus tutorials for differential privacy and the Flower framework for federated learning. About 3 weeks.
+Prompt Engineering | prompting | prompt design | few-shot | chain of thought: Take the free DeepLearning.AI course ChatGPT Prompt Engineering for Developers and read the prompt guides of major model providers. About 1 week.
+Python | python3: Follow the official Python tutorial at docs.python.org, then solve small problems every day. About 3 weeks.
+PyTorch | torch: Follow the official PyTorch Learn the Basics tutorial and train a small neural network. About 2 weeks.
+RAG | retrieval augmented generation | retrieval-augmented generation: Take the DeepLearning.AI short courses on RAG and build a question answering app over your own PDFs. About 3 weeks.
+Redis | caching | cache: Take the free Redis University introduction course and add caching to one of your projects. About 1 week.
+Regression Analysis | regression | forecasting | time series: Watch StatQuest on linear regression and practice with statsmodels and scikit-learn on a small dataset. About 2 weeks.
+Responsive Design | responsive | tailwind | bootstrap | media queries | mobile-first: Read the MDN guide on responsive design and rebuild one page with Tailwind CSS or Bootstrap. About 2 weeks.
+REST APIs | rest api | restful | fastapi | flask | django rest | spring web | express.js | expressjs: Build a small API with the official FastAPI tutorial and test it with Postman or curl. About 1 week.
+Scikit-learn | sklearn: Work through the official scikit-learn tutorials, then build one classification and one regression project. About 2 weeks.
+Secrets Management | vault | secrets manager | key vault: Follow the HashiCorp Vault tutorials and move one secret out of your code. About 2 weeks.
+Secure Coding | input validation | sast | code review | owasp cheat sheet: Read the OWASP Cheat Sheet Series and fix the weaknesses in one small web app you wrote. About 2 weeks.
+Serverless | lambda | cloud functions | azure functions: Build a small API with AWS Lambda or Google Cloud Functions following their official quickstarts. About 2 weeks.
+SIEM and Log Analysis | siem | splunk | elk | elastic stack | log analysis | wazuh: Take the free Splunk Fundamentals training and build log searches and alerts on sample data. About 3 weeks.
+Spring AI | langchain4j: Follow the Spring AI reference documentation and build a chatbot or document assistant in Java. About 3 weeks.
+Spring Boot | spring: Follow the official guides at spring.io/guides and build a small REST application. About 3 weeks.
+Spring Security | jwt | oauth | oauth2: Follow the official Spring Security guides and add JWT login with role-based access to a small API. About 3 weeks.
+SQL: Practice with the free Kaggle Learn Intro to SQL course and SQLBolt, then solve SQL exercises daily. About 2 weeks.
+SRE Practices | sre | slo | sli | error budget | incident | on-call: Read the free Google SRE book online and define one SLO for a project you run. About 3 weeks.
+Statistics | statistical | probability: Watch StatQuest videos on YouTube and practice with Khan Academy statistics and probability. About 3 weeks.
+Streaming and WebSockets | websocket | websockets | server-sent events | sse | streaming | socket.io: Read the MDN guides on WebSockets and Server-Sent Events and stream LLM tokens into a web page. About 1 week.
+TensorFlow/Keras | tensorflow | keras: Use the official TensorFlow beginner tutorials to build an image classifier with Keras. About 2 weeks.
+Terraform | infrastructure as code | iac: Follow the HashiCorp Developer Terraform tutorials and create a small cloud setup as code. About 3 weeks.
+Threat Modeling | threat model | stride | mitre | attack surface: Read the OWASP Threat Modeling Cheat Sheet and explore the MITRE ATT&CK website, then model one of your own apps. About 2 weeks.
+Tool Calling | function calling | tool use: Read the function calling guide of one LLM provider and build an assistant that calls a weather tool and a calculator tool. About 1 week.
+Transformers | transformer | hugging face | huggingface | bert | distilbert: Take the free Hugging Face course and read The Illustrated Transformer, then fine-tune a small pretrained model. About 3 weeks.
+TypeScript: Read the official TypeScript Handbook and convert one JavaScript project to TypeScript. About 2 weeks.
+Vector Databases | vector database | vector db | faiss | chroma | qdrant | pinecone | pgvector | weaviate | milvus: Follow the quickstart of FAISS, Chroma or Qdrant and store and search embeddings in one project. About 1 week.
+Vision Transformers | vision transformer | vit | clip | dino: Take the free Hugging Face Computer Vision course and fine-tune a small vision transformer. About 3 weeks.
+Vulnerability Assessment | vulnerability scanning | nessus | nmap | openvas | cve: Learn Nmap from its official docs and scan your own lab machines with OpenVAS, never systems you do not own. About 3 weeks.
+Web Scraping | beautifulsoup | playwright | selenium | scrapy: Learn BeautifulSoup and Playwright from their docs and scrape one public site while respecting robots.txt. About 1 week.
+Web Testing | jest | pytest | cypress | playwright | vitest | testing | unit test: Learn Jest or pytest from the official docs and add Playwright tests to one web app. About 2 weeks.
+Workflow Automation | n8n | zapier | airflow: Follow the n8n documentation tutorials and automate one real task that includes an LLM step. About 1 week.
+Workflow Orchestration | airflow | prefect | dagster | orchestration: Follow the official Airflow or Prefect tutorial and schedule a small training pipeline. About 2 weeks.

@@ -1,0 +1,12 @@
+MLOps Engineer
+[projects]
+Reproducible training run (Beginner): Version data with DVC, track runs with MLflow and make one training run repeatable from a single command. About 1 week.
+Containerized model API (Intermediate): Serve a model with FastAPI in Docker, add tests and deploy it to a free cloud tier. About 2 weeks.
+CI/CD for machine learning (Advanced): Build a GitHub Actions pipeline that tests, trains, evaluates and deploys a model when the code changes. About 3 weeks.
+Monitoring and drift dashboard (Advanced): Add Prometheus and Grafana monitoring and a drift report to a deployed model. About 3 weeks.
+[career]
+Polish your GitHub: Pin your 3 to 4 best projects and write a clear README for each with screenshots, setup steps and results. Never commit API keys or passwords. About 1 week.
+Upgrade your LinkedIn profile: Use a headline that names your target role, add your projects and skills, and ask teachers or mentors for recommendations. About 2 days.
+Tailor your resume: Use the exact skills from real MLOps Engineer job postings, keep it to one page and show measurable results. About 2 days.
+Apply for internships: Check company career pages and job boards every week, send 5 to 10 tailored applications and track them in a simple sheet. About 4 weeks.
+Prepare for interviews: Practice Python, Linux and Docker questions, revise CI/CD and Kubernetes basics, and be ready to explain how you deploy and monitor a model in production. About 4 weeks.

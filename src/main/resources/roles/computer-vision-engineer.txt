@@ -1,0 +1,31 @@
+Computer Vision Engineer
+@icon 👁️
+@tagline Teach machines to see with detection, tracking and edge AI
+@order 7
+[Foundations]
+Python|python3
+NumPy
+Git|github|gitlab
+Linear Algebra|matrix|matrices|eigenvalue
+Image Processing|opencv|scikit-image|pillow
+[Deep Learning]
+Deep Learning|dl
+PyTorch|torch
+TensorFlow/Keras|tensorflow|keras
+CNNs|cnn|convolutional|resnet|vgg|efficientnet
+[Vision Tasks]
+Object Detection|yolo|detectron|faster r-cnn|ssd
+Image Classification|transfer learning
+Image Segmentation|segmentation|u-net|mask r-cnn|segment anything
++Object Tracking|deepsort|bytetrack|tracking
++Vision Transformers|vision transformer|vit|clip|dino
++Generative Vision|diffusion|gan|gans|stable diffusion|generative
+[Data & Training]
+Data Annotation|annotation|labeling|cvat|label studio|roboflow|labelimg
+Data Augmentation|augmentation|albumentations
+Model Evaluation|cross-validation|cross validation|f1-score|f1 score|precision|recall|roc|auc
+[Deployment]
+Docker|dockerfile|docker compose
+Model Optimization|onnx|tensorrt|quantization|pruning|tflite
++Edge Deployment|jetson|raspberry pi|edge ai|tensorflow lite
++REST APIs|rest api|restful|fastapi|flask|django rest|spring web|express.js|expressjs

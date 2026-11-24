@@ -1,0 +1,33 @@
+Full-Stack AI Developer
+@icon 🌐
+@tagline Ship complete web apps with AI features, frontend to backend
+@order 10
+[Frontend]
+HTML and CSS|html|css|html5|css3|flexbox
+JavaScript|js|es6
+TypeScript
+Frontend Framework|react|next.js|nextjs|react.js|vue|angular|svelte
+Responsive Design|responsive|tailwind|bootstrap|media queries|mobile-first
+[Backend]
+Backend Framework|spring boot|fastapi|django|flask|express.js|node.js|asp.net|laravel|nestjs
+REST APIs|rest api|restful|fastapi|flask|django rest|spring web|express.js|expressjs
+Authentication|authorization|jwt|oauth|oauth2|passport.js|nextauth
++Node.js|nodejs|express.js|expressjs|nestjs
++GraphQL|apollo
+[Databases]
+SQL
+MySQL/PostgreSQL|mysql|postgresql|postgres
++MongoDB|nosql|mongoose
++Redis|caching|cache
+[AI Integration]
+LLM APIs|openai api|anthropic|claude api|gemini api|groq|llm api|chat completion
+RAG|retrieval augmented generation|retrieval-augmented generation
+Vector Databases|vector database|vector db|faiss|chroma|qdrant|pinecone|pgvector|weaviate|milvus
+Prompt Engineering|prompting|prompt design|few-shot|chain of thought
++Streaming and WebSockets|websocket|websockets|server-sent events|sse|streaming|socket.io
+[DevOps & Quality]
+Git|github|gitlab
+Docker|dockerfile|docker compose
+CI/CD|cicd|github actions|jenkins|gitlab ci|circleci|continuous integration
+Web Testing|jest|pytest|cypress|playwright|vitest|testing|unit test
++Cloud Deployment|vercel|netlify|render|heroku|aws|azure|gcp|deployed

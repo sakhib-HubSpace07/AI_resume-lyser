@@ -1,0 +1,12 @@
+Java Developer
+[projects]
+Library management REST API (Beginner): Build CRUD endpoints with Spring Boot and MySQL or PostgreSQL, with validation and unit tests. About 2 weeks.
+Secure task manager (Intermediate): Add login with Spring Security and JWT, role-based access and a simple frontend. About 3 weeks.
+Microservices e-commerce backend (Advanced): Build two or three Spring Boot services with Docker Compose, messaging between them and CI on GitHub Actions. About 4 weeks.
+AI-powered Spring Boot app (Advanced): Use Spring AI to build a document assistant with RAG and publish it with a clear README. About 3 weeks.
+[career]
+Polish your GitHub: Pin your 3 to 4 best projects and write a clear README for each with screenshots, setup steps and results. Never commit API keys or passwords. About 1 week.
+Upgrade your LinkedIn profile: Use a headline that names your target role, add your projects and skills, and ask teachers or mentors for recommendations. About 2 days.
+Tailor your resume: Use the exact skills from real Java Developer job postings, keep it to one page and show measurable results. About 2 days.
+Apply for internships: Check company career pages and job boards every week, send 5 to 10 tailored applications and track them in a simple sheet. About 4 weeks.
+Prepare for interviews: Practice data structures and algorithms in Java, revise OOP, collections, Spring Boot and SQL, and learn to explain each project in two minutes. About 4 weeks.

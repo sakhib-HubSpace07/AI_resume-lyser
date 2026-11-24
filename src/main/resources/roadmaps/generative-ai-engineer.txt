@@ -1,0 +1,12 @@
+Generative AI Engineer
+[projects]
+Prompt playground (Beginner): Build a small app that compares prompts and models side by side and logs which prompt works best. About 1 week.
+Chat with your PDFs (Intermediate): Build a RAG app with embeddings and a vector database and show the source of every answer. About 2 weeks.
+Fine-tuned domain assistant (Advanced): Fine-tune a small open model with LoRA on a small dataset and compare it with the base model using a test set. About 3 weeks.
+LLM app with evaluation and guardrails (Advanced): Add automatic evaluation, prompt injection checks and a streaming web UI to one of your LLM apps. About 3 weeks.
+[career]
+Polish your GitHub: Pin your 3 to 4 best projects and write a clear README for each with screenshots, setup steps and results. Never commit API keys or passwords. About 1 week.
+Upgrade your LinkedIn profile: Use a headline that names your target role, add your projects and skills, and ask teachers or mentors for recommendations. About 2 days.
+Tailor your resume: Use the exact skills from real Generative AI Engineer job postings, keep it to one page and show measurable results. About 2 days.
+Apply for internships: Check company career pages and job boards every week, send 5 to 10 tailored applications and track them in a simple sheet. About 4 weeks.
+Prepare for interviews: Practice Python and system design for LLM apps, revise transformers, embeddings and RAG, and be ready to explain how you evaluate and secure an LLM application. About 4 weeks.

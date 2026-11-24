@@ -1,0 +1,12 @@
+AI Agent Engineer
+[projects]
+Tool-using assistant (Beginner): Build an assistant that calls three tools such as search, calculator and weather using function calling. About 1 week.
+Research agent (Intermediate): Build an agent that plans, searches the web and writes a short cited report, with every step traced. About 2 weeks.
+Multi-agent workflow (Advanced): Build two or three cooperating agents for one real workflow with LangGraph and add human approval for risky steps. About 3 weeks.
+MCP server and agent evaluation (Advanced): Expose one real tool through an MCP server and measure your agent's success rate on 20 test tasks. About 3 weeks.
+[career]
+Polish your GitHub: Pin your 3 to 4 best projects and write a clear README for each with screenshots, setup steps and results. Never commit API keys or passwords. About 1 week.
+Upgrade your LinkedIn profile: Use a headline that names your target role, add your projects and skills, and ask teachers or mentors for recommendations. About 2 days.
+Tailor your resume: Use the exact skills from real AI Agent Engineer job postings, keep it to one page and show measurable results. About 2 days.
+Apply for internships: Check company career pages and job boards every week, send 5 to 10 tailored applications and track them in a simple sheet. About 4 weeks.
+Prepare for interviews: Practice Python and async coding, revise tool calling, planning and RAG, and be ready to explain how you test, trace and limit the risks of an agent. About 4 weeks.

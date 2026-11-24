@@ -1,0 +1,33 @@
+AI Agent Engineer
+@icon 🧠
+@tagline Design agents that plan, use tools and work together
+@order 5
+[Foundations]
+Python|python3
+Git|github|gitlab
+REST APIs|rest api|restful|fastapi|flask|django rest|spring web|express.js|expressjs
+Async Programming|asyncio|async|concurrent
+LLMs|llm|large language model|gpt|llama|mistral|gemini
+Prompt Engineering|prompting|prompt design|few-shot|chain of thought
+[Agent Concepts]
+AI Agents|ai agent|agentic|agents|autonomous agent
+Tool Calling|function calling|tool use
+Planning and Reasoning|react agent|reasoning|chain of thought|planning|reflection
+Agent Frameworks|langgraph|crewai|autogen|langchain|llamaindex|openai agents
++Multi-Agent Systems|multi-agent|multi agent|multiagent
++MCP|model context protocol
+[Memory & Knowledge]
+RAG|retrieval augmented generation|retrieval-augmented generation
+Embeddings|embedding|sentence-transformers|sentence transformers|semantic search
+Vector Databases|vector database|vector db|faiss|chroma|qdrant|pinecone|pgvector|weaviate|milvus
++Knowledge Graphs|knowledge graph|neo4j|graph database|cypher
+[Production]
+Observability and Tracing|tracing|langsmith|langfuse|observability|telemetry
+AI Safety and Guardrails|guardrails|guardrail|responsible ai|prompt injection|ai safety|hallucination
+Docker|dockerfile|docker compose
++LLM Evaluation|ragas|benchmark|evals|evaluation
++Cloud Platforms|aws|azure|gcp|google cloud|cloud
+[Integrations]
+SQL
++Web Scraping|beautifulsoup|playwright|selenium|scrapy
++Workflow Automation|n8n|zapier|airflow

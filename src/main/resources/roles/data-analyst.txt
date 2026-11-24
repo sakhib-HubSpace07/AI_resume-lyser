@@ -1,0 +1,31 @@
+Data Analyst
+@icon 📊
+@tagline Turn raw data into insights, dashboards and decisions
+@order 3
+[Data Tools]
+SQL
+Excel|spreadsheet|pivot table
+Python|python3
+Pandas
+NumPy
+Jupyter|colab
++Git|github|gitlab
+[Analysis & Statistics]
+Statistics|statistical|probability
+Data Cleaning|data wrangling|data preprocessing|preprocessing|missing values|data cleansing
+Exploratory Data Analysis|eda
+Hypothesis Testing|hypothesis test|a/b test|a/b testing|p-value|t-test|significance
++Regression Analysis|regression|forecasting|time series
+[Visualization & BI]
+Data Visualization|data visualisation|matplotlib|seaborn|plotly
+Power BI/Tableau|power bi|tableau|looker
+Dashboards|dashboard
+Data Storytelling|storytelling|insights|recommendations
++Looker Studio|data studio
+[Data Engineering Basics]
+MySQL/PostgreSQL|mysql|postgresql|postgres
++ETL|data pipeline|airflow|elt
++Data Warehousing|bigquery|snowflake|redshift|data warehouse
+[Business & ML]
+Business Acumen|kpi|kpis|business analysis|stakeholder|stakeholders|business metrics
++Machine Learning|ml

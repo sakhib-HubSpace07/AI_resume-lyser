@@ -1,0 +1,30 @@
+MLOps Engineer
+@icon ⚙️
+@tagline Automate, deploy and monitor ML systems in production
+@order 6
+[Foundations]
+Python|python3
+Linux|ubuntu|unix
+Git|github|gitlab
+SQL
+Machine Learning|ml
+Bash Scripting|bash|shell script|shell scripting
+[Containers & Orchestration]
+Docker|dockerfile|docker compose
+Kubernetes|k8s
++Helm
++Kubeflow|argo workflows
+[Pipelines & Tracking]
+Experiment Tracking|mlflow|weights & biases|wandb|tensorboard
+Data Versioning|dvc|data version control|lakefs
+Workflow Orchestration|airflow|prefect|dagster|orchestration
+[CI/CD & Infrastructure]
+CI/CD|cicd|github actions|jenkins|gitlab ci|circleci|continuous integration
+Terraform|infrastructure as code|iac
+Cloud Platforms|aws|azure|gcp|google cloud|cloud
++Cloud ML Platforms|sagemaker|vertex ai|azure ml|azure machine learning|databricks
+[Serving & Monitoring]
+Model Serving|bentoml|triton|torchserve|seldon|kserve|inference server
+Monitoring|prometheus|grafana|alerting|datadog|cloudwatch
++Data Drift Detection|data drift|drift detection|evidently|model monitoring
++Feature Stores|feature store|feast

@@ -1,0 +1,34 @@
+ML Engineer
+@icon 🤖
+@tagline Train, evaluate and ship machine learning models
+@order 1
+[Programming & Data]
+Python|python3
+NumPy
+Pandas
+SQL
+Git|github|gitlab
+Data Visualization|data visualisation|matplotlib|seaborn|plotly
+[ML Fundamentals]
+Machine Learning|ml
+Statistics|statistical|probability
+Scikit-learn|sklearn
+Feature Engineering|feature selection|feature extraction
+Model Evaluation|cross-validation|cross validation|f1-score|f1 score|precision|recall|roc|auc
++Hyperparameter Tuning|hyperparameter|grid search|random search|optuna
+[Deep Learning]
+Deep Learning|dl
+PyTorch|torch
+TensorFlow/Keras|tensorflow|keras
+Neural Networks|neural network|cnn|rnn|lstm|mlp
++Transformers|transformer|hugging face|huggingface|bert|distilbert
+[Applied AI]
+NLP|natural language processing|text classification|spacy|nltk
+Computer Vision|opencv|image classification|object detection
++LLMs|llm|large language model|gpt|llama|mistral|gemini
+[Engineering & Deployment]
+Docker|dockerfile|docker compose
+REST APIs|rest api|restful|fastapi|flask|django rest|spring web|express.js|expressjs
++Experiment Tracking|mlflow|weights & biases|wandb|tensorboard
++Cloud Platforms|aws|azure|gcp|google cloud|cloud
++Model Deployment|model serving|model inference|inference api|deployed|streamlit|gradio|bentoml
